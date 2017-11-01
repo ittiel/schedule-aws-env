@@ -15,7 +15,7 @@ node {
     stage('Prepare') {
         echo 'Preparing environment..'
         if (isUnix()) {
-            sh 'sudo add-apt-repository ppa:jonathonf/python-3.6'
+            sh 'sudo add-apt-repository ppa:fkrull/deadsnakes'
             sh 'sudo apt-get update'
             sh 'sudo apt-get install python3.6 -y'
             sh 'sudo apt-get install python-pip -y'
